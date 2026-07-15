@@ -1625,6 +1625,7 @@ version = version(self, unityVersion)
 end
 end
 end
+gg.alert("Version detected: " .. tostring(version))
 local api = assert(Il2CppConst[version], 'Not support this il2cpp version')
 Il2cpp.FieldApi.Offset = api.FieldApiOffset
 Il2cpp.FieldApi.Type = api.FieldApiType
